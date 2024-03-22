@@ -11,6 +11,8 @@ const Tenor = require('tenorjs').client({
   Locale: 'en_US', // Your locale here, case-sensitivity depends on input
 });
 
+app.use(express.static('public'));
+
 // Middleware
 const handlebars = require('express-handlebars');
 
