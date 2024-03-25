@@ -34,7 +34,7 @@ app.set('views', './views');
 // Routes
 
 app.get('/', (req, res) => {
-  term = '';
+  term = 'cat';
   if (req.query.term) {
     term = req.query.term;
   }
